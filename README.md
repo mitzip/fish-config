@@ -11,3 +11,4 @@ fish-config
 * getgen.fish - Grab latest Gentoo-x86 ebuilds from Gentoo CVS
 * gittyup.fish - Perform a `git up` in every git repo with remotes in a directory
 * lf.fish - List all available repos at git.funtoo.org
+* upworld.fish - Fully update a Funtoo system
