@@ -1,4 +1,4 @@
-function gitupall -a 'gitpaths' -d "Run git up on every sub-dir"
+function gittyup -a 'gitpaths' -d "Run git up on every sub-dir"
     if test -d ~/.local/bin
         if not echo $fish_user_paths | grep "$HOME/\.local/bin" > /dev/null ^ /dev/null
             # If you've got it, use it!
