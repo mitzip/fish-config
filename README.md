@@ -1,6 +1,11 @@
 fish-config
 ==============
 
+config.fish
+1) Run byobu, if found
+2) Add ~/.local/bin to path, if found
+3) Update self, if needed
+
 ### Helpful fish shell functions
 
 * catch.fish - Check domain name availability with domai.nr from the command line
