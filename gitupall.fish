@@ -10,19 +10,19 @@ function gitupall -a 'gitpaths' -d "Run git up on every sub-dir"
             # https://pypi.python.org/pypi/git-up/
             pip install --user git-up
         else
-            echo 'Can't install git-up without python\'s pip, bailing...'
+            echo "Can't install git-up without python's pip, bailing..."
             return 1
         end
     end
-    set -l origPWD $PWD
+    set origPWD $PWD
     if test -z $gitpaths
-        set -l gitpaths $origPWD
+        set gitpaths $origPWD
     else if test ! -d $gitpaths
         echo "ERROR: Cannot find directory '$gitpaths'..."
         return 1
     end
-    set -l gitpaths (echo $gitpaths"/" | tr -s /)
-    set -l numrepos 0
+    set gitpaths (echo $gitpaths"/" | tr -s /)
+    set numrepos 0
     for i in (command ls $gitpaths)
         if test -d $gitpaths$i
             cd $gitpaths$i
@@ -31,7 +31,7 @@ function gitupall -a 'gitpaths' -d "Run git up on every sub-dir"
                     echo $PWD
                     git up
                     echo -ne "\n"
-                    set -l numrepos (math $numrepos+1)
+                    set numrepos (math $numrepos+1)
                 end
             end
         end
