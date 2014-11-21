@@ -9,5 +9,5 @@ Helpful fish shell functions
 * fish_prompt.fish - Custom fish prompt
 * funtooize.fish - Sanitize Gentoo ebuilds and Manifests to Funtoo spec, recursively
 * getgen.fish - Grab latest Gentoo-x86 ebuilds from Gentoo CVS
-* gitup.fish - Perform a `git up` in every git repo with remotes in a directory
+* gitupall.fish - Perform a `git up` in every git repo with remotes in a directory
 * lf.fish - List all available repos at git.funtoo.org
