@@ -9,6 +9,6 @@ if test -d ~/.local/bin
     end
 end
 
-if test -e ~/.config/fish/functions/autoupdate.fish
-    autoupdate
+if test -e ~/.config/fish/functions/autofish.fish
+    autofish
 end
