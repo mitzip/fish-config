@@ -1,19 +1,41 @@
 fish-config
 ==============
 
-config.fish
-1) Run byobu, if found
-2) Add ~/.local/bin to path, if found
-3) Update self, if needed
+### config.fish
 
-### Helpful fish shell functions
+1. Run byobu, if found
+2. Add ~/.local/bin to path, if found
+3. Update self, if needed
 
+### functions/
+
+* autofish.fish - Update self from whatever branch it's on, runs on login
+ * USAGE: `autofish`
 * catch.fish - Check domain name availability with domai.nr from the command line
+ * USAGE: catch <domain w/ or w/o tld>
+ * EXAMPLE: `catch example`
+ * EXAMPLE: `catch example.com`
 * dpaste.fish - Pipe STDIN to dpaste.com
-* findfin.fish - Search for a Funtoo Linux package in all repos Funtoo pulls from
-* fish_prompt.fish - Custom fish prompt
+ * USAGE: dpaste <expire in days> <syntax to hilight>
+ * EXAMPLE: `cat /etc/passwd | dpaste 1 bash`
+* findfun.fish - Search for a Funtoo Linux package in all repos Funtoo pulls from
+ * USAGE: findfun <package or ebuild>
+ * EXAMPLE: `findfun dev-db/mongodb`
+ * EXAMPLE: `findfun dev-db/mongodb/mongodb-2.4.6-r1.ebuild`
+* fish_prompt.fish - Custom fish prompt, run automatically by fish
 * funtooize.fish - Sanitize Gentoo ebuilds and Manifests to Funtoo spec, recursively
+ * USAGE: funtooize <path>
+ * EXAMPLE: `funtooize # uses current directory`
+ * EXAMPLE: `funtooize /path/to/overlay`
 * getgen.fish - Grab latest Gentoo-x86 ebuilds from Gentoo CVS
+ * USAGE: getgen <package or ebuild>
+ * EXAMPLE: `getgen dev-db/mongodb`
+ * EXAMPLE: `getgen dev-db/mongodb/mongodb-2.4.6-r1.ebuild`
 * gittyup.fish - Perform a `git up` in every git repo with remotes in a directory
+ * USAGE: gittyup <path>
+ * EXAMPLE: `gittyup # uses current directory`
+ * EXAMPLE: `gittyup /path/to/lots/of/git/repos`
 * lf.fish - List all available repos at git.funtoo.org
+ * USAGE: `lf`
 * upworld.fish - Fully update a Funtoo system
+ * USAGE: `upworld`
