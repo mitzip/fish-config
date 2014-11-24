@@ -5,7 +5,13 @@ function _git_branch_name
 end
 
 function _is_git_dirty
-    echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+    set gitver (git --version | sed -e 's/^git version //' -e 's/\.//g')
+    if test (math ".$gitver < .172") -eq 1
+        echo (command git status -s ^/dev/null)
+    else
+        # introduced in git version 1.7.2
+        echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+    end
 end
 
 function fish_prompt --description 'Write out the prompt'
