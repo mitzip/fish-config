@@ -59,5 +59,11 @@ function fish_prompt --description 'Write out the prompt'
 	     set delim " $red➜"
 	end
 
-	echo -n -s "$__fish_prompt_cwd" (prompt_pwd) "$git_info" "$prompt_status" "$delim" ' '
+    if test (hostname) = 'localhost'
+        set bat " "(upower --dump | grep "time to" | sed -e 's/ minutes/m/' -e 's/ hours/h/' -e 's/ //g' | awk -F: '{ print $2 }')
+    else
+        set bat ''
+    end
+
+	echo -n -s "$__fish_prompt_cwd" (prompt_pwd) "$git_info" "$prompt_status" "$red$bat" "$delim" ' '
 end
