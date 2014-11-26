@@ -40,5 +40,7 @@ fish-config
 * uniqwords.fish - Get a list of unique words from STDIN to STDOUT
  * USAGE: `cat <text data> | uniqwords`
  * EXAMPLE: `cat AV1611Bible.txt | uniqwords > allthewords.txt`
-* upworld.fish - Fully update a Funtoo system
+* upapt.fish - Fully update a box using the APT package manager (Ubuntu, Debian, etc)
+ * USAGE: `upapt`
+* upworld.fish - Fully update a box using the Portage package manager (Funtoo, Gentoo, etc)
  * USAGE: `upworld`
