@@ -37,6 +37,8 @@ fish-config
  * EXAMPLE: `gittyup /path/to/lots/of/git/repos`
 * lf.fish - List all available repos at git.funtoo.org
  * USAGE: `lf`
+* showcert.fish - Show SSL certificate of remote host
+ * USAGE: `showcert google.com`
 * uniqwords.fish - Get a list of unique words from STDIN to STDOUT
  * USAGE: `cat <text data> | uniqwords`
  * EXAMPLE: `cat AV1611Bible.txt | uniqwords > allthewords.txt`
