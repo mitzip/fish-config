@@ -16,8 +16,8 @@ if test -d /usr/local/bin
     end
 end
 
-if test -d ~/.nodebrew
-    if not echo $fish_user_paths | grep "$HOME/\.nodebrew" > /dev/null ^ /dev/null
+if test -d ~/.nodebrew/current/bin
+    if not echo $fish_user_paths | grep "$HOME/\.nodebrew/current/bin" > /dev/null ^ /dev/null
         # If you've got it, use it!
         set --universal fish_user_paths $fish_user_paths ~/.nodebrew/current/bin
     end
