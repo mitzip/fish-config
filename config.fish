@@ -23,6 +23,14 @@ if test -d ~/.nodebrew/current/bin
     end
 end
 
+# If you `brew install Caskroom/cask/mactex`
+if test -d /usr/texbin
+    if not echo $fish_user_paths | grep "/usr/texbin" > /dev/null ^ /dev/null
+        # If you've got it, use it!
+        set --universal fish_user_paths $fish_user_paths /usr/texbin
+    end
+end
+
 if test -e ~/.config/fish/functions/autofish.fish
     autofish
 end
