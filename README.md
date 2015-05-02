@@ -39,6 +39,8 @@ fish-config
  * USAGE: gittyup <path>
  * EXAMPLE: `gittyup # uses current directory`
  * EXAMPLE: `gittyup /path/to/lots/of/git/repos`
+* Godsay.fish - echo a random verse from the King James Bible
+ * USAGE: `Godsay`
 * lf.fish - List all available repos at git.funtoo.org
  * USAGE: `lf`
 * mutt.fish - Wrapper that starts mutt in BASH, as mutt requires

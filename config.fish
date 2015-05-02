@@ -34,3 +34,7 @@ end
 if test -e ~/.config/fish/functions/autofish.fish
     autofish
 end
+
+if test -e ~/.config/fish/functions/Godsay.fish
+    alias fish_greeting Godsay
+end
