@@ -5,7 +5,11 @@ fish-config
 
 1. Run byobu, if found
 2. Add ~/.local/bin to path, if found
-3. Update self, if needed
+3. Add /usr/local/bin to path, if found
+4. Add ~/.nodebrew/current/bin to path, if found
+5. Add /usr/texbin to path, if you'd `brew install Caskroom/cask/mactex`
+6. Update self, if needed
+7. Set greeting, if Godsay function exists
 
 ### functions/
 
@@ -37,8 +41,12 @@ fish-config
  * EXAMPLE: `gittyup /path/to/lots/of/git/repos`
 * lf.fish - List all available repos at git.funtoo.org
  * USAGE: `lf`
+* mutt.fish - Wrapper that starts mutt in BASH, as mutt requires
+ * USAGE: `mutt`
 * showcert.fish - Show SSL certificate of remote host
  * USAGE: `showcert google.com`
+* slrn.fish - Wrapper that defaults to a free NNTP server if none specified for the S-Lang Read News nntp client 
+ * USAGE: `slrn`
 * uniqwords.fish - Get a list of unique words from STDIN to STDOUT
  * USAGE: `cat <text data> | uniqwords`
  * EXAMPLE: `cat AV1611Bible.txt | uniqwords > allthewords.txt`
